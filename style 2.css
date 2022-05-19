@@ -1,0 +1,282 @@
+body
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+    background: rgba(0, 0, 0, 0.671);
+    background-blend-mode: darken;
+	background-attachment: fixed;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: pokaz 60s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+	padding: 0;
+	margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes pokaz
+{
+    0% {
+        background-image: url(Zdjęcia/IMG_2843.JPG);
+    }
+
+    14% {
+        background-image: url(Zdjęcia/IMG_2844.JPG);
+    }
+
+    28% {
+        background-image: url(Zdjęcia/IMG_2851.JPG);
+    }
+
+    42% {
+        background-image: url(Zdjęcia/IMG_2856.JPG);
+    }
+
+    56% {
+        background-image: url(Zdjęcia/IMG_2888.JPG);
+    }
+
+    70% {
+        background-image: url(Zdjęcia/IMG_2891.JPG);
+    }
+
+    100% {
+        background-image: url(Zdjęcia/IMG_2843.JPG);
+    }
+}
+
+.hidden {
+    display: none;
+  }
+
+.menu
+{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.nagłówek
+{
+    margin: 0.5rem;
+	width: 200px;
+	height: 100%;
+}
+.guziki
+{
+	height: 100%;
+}
+.guziki ul
+{
+	margin: 0;
+	padding: 0;
+    display: flex;
+}
+.guziki li
+{
+    list-style-type: none;
+}
+.guziki li a
+{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 1rem;
+	font-weight: 600;
+	font-size: x-large;
+}
+.guziki li:hover
+{
+	background-color: #ff7d14;
+	transition: 0.4s;
+}
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* te 2 tylko w indexie*/
+.main
+{
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.tekst
+{
+    color: white;
+    text-align: justify;
+    text-align: center;
+	padding: 40px;
+	font-size: 25px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.content
+{
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 20px;
+    margin: 40px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.adres
+{
+    text-align: center;
+    width: 50%;
+    float: right;
+    font-size: 30px;
+    color: white;
+}
+
+#ogólne
+{
+    align-items: center;
+    text-align: justify;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#kontakty
+{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    width: 33.3%;
+}
+
+.reszta
+{
+    display: flex;
+    width: 100%;
+}
+
+.picture
+{
+    margin: 2px;
+    margin-top: 20px;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 20px;
+    width: 32%;
+    height: 80%;
+    float: right;
+    vertical-align: middle;
+}
+
+.text
+{
+	text-align: justify;
+    text-align: center;
+	padding: 10px;
+	font-size: 25px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	width: 100%;
+    margin: 5px;
+    color: white;
+}
+
+form
+{
+    font-size: 25px;
+}
+
+.footer
+{
+    padding: 0.5%;
+    background-color: #494949;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.góra
+{
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.góra > *
+{
+    flex:  1 100%;
+}
+
+.dół
+{
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.footer div h3
+{
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+#tło
+{
+    width: 100%
+}
+
+@media (max-width: 850px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .guziki {
+        display: none;
+        width: 100%;
+    }
+
+    .guziki ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .guziki ul li {
+        text-align: center;
+    }
+
+    .guziki ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .guziki.active {
+        display: flex;
+    }
+}
